@@ -1,0 +1,43 @@
+Nessun errore!
+Albero sintattico:
+
+Block
+  DecFun: 'f' -> VoidType
+  	Arg: 'm' -> IntType
+  	Arg: 'n' -> IntType
+  	Block
+  	  ITE
+  	  	BinExp[>]
+  	  		DerExpNode: 'm' -> at nesting level 1 with offset 1
+  	  		DerExpNode: 'n' -> at nesting level 1 with offset 2
+  	  	Block
+  	  	  PrintNode
+  	  	  	BaseExpNode
+  	  	  		BinExp[+]
+  	  	  			DerExpNode: 'm' -> at nesting level 1 with offset 1
+  	  	  			DerExpNode: 'n' -> at nesting level 1 with offset 2
+  	  	Block
+  	  	  DecVar: 'x' -> IntType
+  	  	  	ValExpNode: 1
+  	  	  Call: 'f' -> at nesting level 0 with offset 0
+  	  	  	BinExp[+]
+  	  	  		DerExpNode: 'm' -> at nesting level 1 with offset 1
+  	  	  		ValExpNode: 1
+  	  	  	BinExp[+]
+  	  	  		DerExpNode: 'n' -> at nesting level 1 with offset 2
+  	  	  		ValExpNode: 1
+  Call: 'f' -> at nesting level 0 with offset 0
+  	ValExpNode: 5
+  	ValExpNode: 4
+  Call: 'f' -> at nesting level 0 with offset 0
+  	ValExpNode: 4
+  	ValExpNode: 5
+
+Nella Code generation hai 0 errori lessicali e 0 errori di sintassi.
+
+Avvio della macchina virtuale...
+Risultato esecuzione:
+
+	9
+
+	Errore: memoria insufficiente

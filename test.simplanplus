@@ -1,0 +1,32 @@
+/*{
+	int f=0;
+	bool fOne(int s, int r){
+		int x=f + s;
+		print(true);
+		return false;
+		
+
+	}
+	
+	if(f==1){
+		int d=0;
+		
+		return 6;
+		}else{
+		return 7;
+
+		}
+	fOne(3,3);
+}*/
+
+{
+	int b = 2;
+	
+	{	
+		void fR(){void fs(){}}
+		int v= 3;
+		return v;
+		v=4;
+
+	}
+}

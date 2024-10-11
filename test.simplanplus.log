@@ -1,0 +1,3 @@
+Hai 2 errori semantici:
+	Errore in fR: Funzioni annidate
+	Errore in un blocco: dopo un return, non ci devono essere altri statement

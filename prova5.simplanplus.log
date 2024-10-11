@@ -1,0 +1,41 @@
+Nessun errore!
+Albero sintattico:
+
+Block
+  DecVar: 'u' -> IntType
+  	ValExpNode: 1
+  DecFun: 'f' -> VoidType
+  	Arg: 'x' -> IntType
+  	Arg: 'n' -> IntType
+  	Block
+  	  ITE
+  	  	BinExp[==]
+  	  		DerExpNode: 'n' -> at nesting level 1 with offset 2
+  	  		ValExpNode: 0
+  	  	Block
+  	  	  PrintNode
+  	  	  	BaseExpNode
+  	  	  		DerExpNode: 'x' -> at nesting level 1 with offset 1
+  	  	Block
+  	  	  DecVar: 'y' -> IntType
+  	  	  	BinExp[*]
+  	  	  		DerExpNode: 'x' -> at nesting level 1 with offset 1
+  	  	  		DerExpNode: 'n' -> at nesting level 1 with offset 2
+  	  	  Call: 'f' -> at nesting level 0 with offset 0
+  	  	  	DerExpNode: 'y' -> at nesting level 2 with offset -1
+  	  	  	BinExp[-]
+  	  	  		DerExpNode: 'n' -> at nesting level 1 with offset 2
+  	  	  		ValExpNode: 1
+  Call: 'f' -> at nesting level 0 with offset 0
+  	DerExpNode: 'u' -> at nesting level 0 with offset -1
+  	ValExpNode: 6
+
+Nella Code generation hai 0 errori lessicali e 0 errori di sintassi.
+
+Avvio della macchina virtuale...
+Risultato esecuzione:
+
+	720
+
+Uscita: nessun errore!
+Analisi completata!
